@@ -428,6 +428,166 @@
     .woverlay{transform:translateY(0)!important;}
     .econ,.rev-total{flex-direction:row!important;}
   }
+
+  /* ================================================
+     ПОЛНАЯ МОБИЛЬНАЯ АДАПТАЦИЯ
+  ================================================ */
+  
+  @media (max-width: 768px) {
+
+    /* --- Навигация --- */
+    nav { padding: 10px 16px !important; }
+    .nav-logo { height: 36px !important; }
+    .nav-right { gap: 8px !important; }
+    .nav-phone { font-size: 12px !important; }
+
+    /* --- Секции --- */
+    section { padding: 72px 16px 44px !important; }
+    .snum { font-size: 60px !important; right: 8px !important; top: 16px !important; }
+
+    /* --- Типографика --- */
+    h1 { font-size: clamp(30px, 9vw, 48px) !important; line-height: 0.95 !important; }
+    h2 { font-size: clamp(22px, 7vw, 36px) !important; line-height: 1 !important; }
+    .lbl { font-size: 9px !important; letter-spacing: 2px !important; }
+    p, .body { font-size: 14px !important; line-height: 1.6 !important; }
+
+    /* --- Герой --- */
+    .hero-g { grid-template-columns: 1fr !important; gap: 20px !important; }
+    .hero-sub { font-size: 14px !important; margin: 12px 0 20px !important; }
+    .badges { gap: 6px !important; flex-wrap: wrap !important; }
+    .badge { font-size: 9px !important; padding: 5px 10px !important; }
+    .stats { grid-template-columns: 1fr 1fr !important; gap: 2px !important; }
+    .stat { padding: 16px 12px !important; }
+    .stn { font-size: 32px !important; }
+    .stl { font-size: 9px !important; }
+
+    /* --- О компании --- */
+    .about-g { grid-template-columns: 1fr !important; gap: 0 !important; }
+    .aphoto { max-height: 280px !important; width: 100% !important; object-fit: cover !important; }
+    .facts { grid-template-columns: 1fr 1fr !important; gap: 2px !important; }
+    .fn { font-size: 28px !important; }
+    .fl { font-size: 9px !important; }
+
+    /* --- Команда --- */
+    .tphoto { max-height: 260px !important; }
+    .roles { grid-template-columns: 1fr 1fr !important; gap: 2px !important; }
+    .rc { padding: 12px 10px !important; }
+    .rn { font-size: 13px !important; }
+    .rt { font-size: 10px !important; }
+
+    /* --- Сравнение --- */
+    .cmp { grid-template-columns: 1fr !important; gap: 2px !important; }
+    .bad, .good { padding: 20px 16px !important; }
+    .cit { font-size: 13px !important; line-height: 1.5 !important; }
+    .econ { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; padding: 16px !important; }
+    .ebn { font-size: 34px !important; }
+    .ebt { font-size: 11px !important; }
+
+    /* --- Отзывы --- */
+    .rev-g { grid-template-columns: 1fr !important; gap: 2px !important; }
+    .rcard { padding: 18px 14px !important; }
+    .rating-num { font-size: 50px !important; }
+    .rev-total { flex-direction: column !important; gap: 10px !important; padding: 16px !important; }
+    .rtnum { font-size: 34px !important; }
+    .rtlbl { font-size: 9px !important; }
+
+    /* --- Цены --- */
+    .pcols { grid-template-columns: 1fr !important; gap: 2px !important; }
+    .pc { padding: 20px 16px !important; }
+    .pbig { font-size: 42px !important; }
+    .pl { padding: 0 !important; }
+    .pl li { font-size: 12px !important; padding: 5px 0 5px 18px !important; }
+    .formula { padding: 14px 16px !important; flex-direction: column !important; gap: 8px !important; }
+    .feq { font-size: 13px !important; }
+    #pricing2 > .container > div:last-child { grid-template-columns: 1fr !important; }
+
+    /* --- Состав работ --- */
+    .sg-grid { grid-template-columns: 1fr 1fr !important; gap: 2px !important; }
+    .sg { padding: 12px 10px !important; }
+    .sgn { font-size: 22px !important; }
+    .sgt { font-size: 11px !important; }
+
+    /* --- Оборудование --- */
+    .eq-grid { grid-template-columns: 1fr !important; gap: 2px !important; }
+    .eq-card { flex-direction: row !important; min-height: 130px !important; }
+    .eq-img-wrap { width: 130px !important; min-width: 130px !important; height: 130px !important; flex-shrink: 0 !important; }
+    .eq-info { padding: 12px 12px !important; }
+    .eq-name { font-size: 12px !important; margin-bottom: 6px !important; }
+    .eq-desc { font-size: 11px !important; line-height: 1.4 !important; }
+
+    /* --- Материалы --- */
+    .mat-main-grid { grid-template-columns: 1fr 1fr !important; gap: 2px !important; }
+    .mc-img-wrap { height: 100px !important; }
+    .mb2 { font-size: 11px !important; }
+    .md2 { font-size: 10px !important; }
+    .mp2 { font-size: 10px !important; }
+
+    /* --- Примеры работ --- */
+    .works-grid { grid-template-columns: 1fr 1fr !important; gap: 2px !important; }
+    .wimg { height: 160px !important; }
+    .woverlay { transform: translateY(0) !important; opacity: 1 !important; }
+    .wtitle { font-size: 11px !important; }
+    .wsub { font-size: 10px !important; }
+
+    /* --- Услуги --- */
+    .srv-g { grid-template-columns: 1fr 1fr !important; gap: 2px !important; }
+    .sv { padding: 16px 12px !important; }
+    .sv-icon { font-size: 24px !important; }
+    .sv-name { font-size: 12px !important; }
+    .sv-desc { font-size: 11px !important; }
+
+    /* --- Гарантии --- */
+    .gg { grid-template-columns: 1fr !important; gap: 2px !important; }
+    .gi { padding: 18px 14px !important; }
+    .gt { font-size: 18px !important; }
+    .gd { font-size: 12px !important; }
+
+    /* --- Инженер --- */
+    .eng-grid { grid-template-columns: 1fr !important; gap: 0 !important; }
+    .eng-img { max-height: 280px !important; width: 100% !important; object-fit: cover !important; }
+    .eng-facts { grid-template-columns: 1fr 1fr !important; gap: 2px !important; }
+
+    /* --- Почему мы --- */
+    #whyus > .container > div:nth-child(2) { grid-template-columns: 1fr 1fr !important; gap: 2px !important; }
+    #whyus > .container > div:nth-child(3) { grid-template-columns: 1fr 1fr !important; gap: 2px !important; }
+    #whyus [style*="font-size:52px"] { font-size: 30px !important; }
+    #whyus [style*="padding:36px 24px"] { padding: 14px 12px !important; }
+    #whyus [style*="padding:28px 24px"] { padding: 10px 10px !important; }
+
+    /* --- CTA --- */
+    .cta-phone { font-size: clamp(26px, 7vw, 40px) !important; letter-spacing: -1px !important; }
+    .msgs { flex-wrap: wrap !important; gap: 6px !important; justify-content: center !important; }
+    .mb3 { padding: 10px 16px !important; font-size: 12px !important; letter-spacing: 1px !important; }
+    .cpills { flex-wrap: wrap !important; gap: 6px !important; justify-content: center !important; }
+    .cp { font-size: 9px !important; padding: 6px 12px !important; }
+
+    /* --- Кнопки --- */
+    .btn { padding: 14px 22px !important; font-size: 13px !important; }
+
+    /* --- Строка преимуществ --- */
+    .ticker-wrap { padding: 10px 0 !important; }
+    .ticker-item { font-size: 11px !important; }
+  }
+
+  /* --- Очень маленькие экраны (iPhone SE, Galaxy A) --- */
+  @media (max-width: 390px) {
+    h1 { font-size: clamp(26px, 8.5vw, 38px) !important; }
+    h2 { font-size: clamp(20px, 7vw, 30px) !important; }
+    section { padding: 68px 12px 36px !important; }
+    .stats { grid-template-columns: 1fr 1fr !important; }
+    .stn { font-size: 28px !important; }
+    .works-grid { grid-template-columns: 1fr !important; }
+    .wimg { height: 220px !important; }
+    .sg-grid { grid-template-columns: 1fr !important; }
+    .mat-main-grid { grid-template-columns: 1fr 1fr !important; }
+    .eq-card { flex-direction: column !important; }
+    .eq-img-wrap { width: 100% !important; min-width: unset !important; height: 160px !important; }
+    #whyus > .container > div:nth-child(2) { grid-template-columns: 1fr !important; }
+    #whyus > .container > div:nth-child(3) { grid-template-columns: 1fr !important; }
+    .cta-phone { font-size: 24px !important; }
+    .mb3 { width: 100% !important; text-align: center !important; }
+  }
+
 </style>
 </head>
 <body>
